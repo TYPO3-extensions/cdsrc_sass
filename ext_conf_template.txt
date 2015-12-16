@@ -1,0 +1,6 @@
+  # cat=Base; type=string; label=Path to directory where CSS file will be generated
+css_path = typo3temp/sass/css  
+# cat=Base; type=int; label=How many time until generated file are removed from CSS directory (seconds)
+cache_age = 604800 
+  # cat=Base; type=boolean; label=Enable development: File that start with "//dev" will be always parsed
+dev_mode = 0  

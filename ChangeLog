@@ -1,0 +1,20 @@
+2015-09-30 Matthias Toscanelli  <m.toscanelli@code-source.ch>
+
+	* Stable 1.2.0
+    * TYPO3 7.4 compatibility fix
+    * BUGFIX: css_path configuration should be taken in consideration
+    * BUGFIX: make sure that file exists before trying to generate
+
+2015-04-03 Matthias Toscanelli  <m.toscanelli@code-source.ch>
+
+	* Stable 1.1.0
+    * TYPO3 7.1 compatibility fix
+
+2014-07-15 Matthias Toscanelli  <m.toscanelli@code-source.ch>
+
+	* Stable 1.0.0
+    * Code clearing
+
+2014-03-29 Matthias Toscanelli  <m.toscanelli@code-source.ch>
+
+	* Initialization
