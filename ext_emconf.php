@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'description' => 'Compile sass/scss into css on page rendering, based on phpsass library',
 	'category' => 'plugin',
 	'shy' => false,
-	'version' => '1.2.0',
+	'version' => '1.2.1',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -36,8 +36,7 @@ $EM_CONF[$_EXTKEY] = array (
 	array (
 		'depends' =>
 		array (
-			'typo3' => '6.2.0-7.4.99',
-			'' => '',
+			'typo3' => '6.2.0-7.6.99',
 		),
 		'conflicts' =>
 		array (
