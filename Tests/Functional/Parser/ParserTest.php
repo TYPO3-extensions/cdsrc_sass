@@ -54,13 +54,14 @@ class ParserTest extends FunctionalTestCase {
 	/**
 	 * @var string
 	 */
-	protected $source = 'typo3conf/ext/cdsrc_sass/Tests/Functional/Fixtures/scss/source.';
+	protected $source = null;
 
 	/**
 	 * Set up test
 	 */
 	public function setUp() {
 		parent::setUp();
+		$this->source = PATH_site . 'typo3conf/ext/cdsrc_sass/Tests/Functional/Fixtures/scss/source.';
 		ConfigurationUtility::setCompiler( ConfigurationUtility::COMPILER_PHPSASS );
 		$this->parserWithPhpSass = GeneralUtility::makeInstance( 'CDSRC\\CdsrcSass\\Parser\\Parser' );
 		ConfigurationUtility::setCompiler( ConfigurationUtility::COMPILER_SCSSPHP );

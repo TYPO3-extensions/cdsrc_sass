@@ -5,8 +5,7 @@ h1 {
 	margin: 0;
 	background-repeat: no-repeat;
 	background-image: none; }
-h1 a:hover,
-h1 a:visited {
+h1 a:hover {
 	color: green; }
 h1 b:hover {
 	color: red;
