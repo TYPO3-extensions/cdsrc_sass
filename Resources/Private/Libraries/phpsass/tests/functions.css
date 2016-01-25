@@ -1,0 +1,71 @@
+/*
+Error: Positional arguments must come before keyword arguments.
+        on line 14 of functions.scss
+
+9: #{test()} {
+10:     content: x()                 if(x() == 'one two', true, false);
+11:     content: x('foo', 'bar')     if(x('foo', 'bar') == 'foo bar', true, false);
+12:     content: x('foo')            if(x('foo') == 'foo two', true, false);
+13:     content: x($two: 'foo')      if(x($two: 'foo') == 'one foo', true, false);
+14:     content: x($two: 'foo', bar) if(x($two: 'foo', bar) == bar foo, true, false);
+15:     adjust-color: adjust-color(#00F, $blue: -15);
+16: }
+
+Backtrace:
+functions.scss:14
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:480:in `block in arglist'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:461:in `loop'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:461:in `arglist'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:446:in `fn_arglist'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:408:in `funcall'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:388:in `ident'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:246:in `unary_not'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:246:in `unary_div'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:246:in `unary_minus'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:246:in `unary_plus'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:227:in `times_div_or_mod'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:227:in `plus_or_minus'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:227:in `relational'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:227:in `eq_or_neq'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:227:in `and_expr'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:227:in `or_expr'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:362:in `space'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:346:in `interpolation'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:293:in `expr'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:569:in `assert_expr'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/parser.rb:62:in `parse'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1023:in `sass_script'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:876:in `value!'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:749:in `block in try_declaration'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1137:in `call'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1137:in `rethrow'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:762:in `try_declaration'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:692:in `declaration_or_ruleset'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:631:in `ruleset'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/2.1.0/gems/sass-3.4.19/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Positional arguments must come before keyword arguments.\A         on line 14 of functions.scss\A \A 9: #{test()} {\A 10:     content: x()                 if(x() == 'one two', true, false);\A 11:     content: x('foo', 'bar')     if(x('foo', 'bar') == 'foo bar', true, false);\A 12:     content: x('foo')            if(x('foo') == 'foo two', true, false);\A 13:     content: x($two: 'foo')      if(x($two: 'foo') == 'one foo', true, false);\A 14:     content: x($two: 'foo', bar) if(x($two: 'foo', bar) == bar foo, true, false);\A 15:     adjust-color: adjust-color(#00F, $blue: -15);\A 16: }"; }
