@@ -1,0 +1,5 @@
+div :first-child,
+div h1 + * {
+  border: 0; }
+
+/*# sourceMappingURL=nested_pseudo.css.map */
