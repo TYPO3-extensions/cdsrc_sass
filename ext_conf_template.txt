@@ -1,6 +1,15 @@
+# cat=Base; type=options[PHPSass (backward compatibility - outdated compiler)=0,scssphp (required PHP 5.4 - only scss)=1, sassGem (require sass gem)=2]; label=Compiler used to create CSS file: scssphp should be used in new installation with PHP >=5.4
+compiler = 0
   # cat=Base; type=string; label=Path to directory where CSS file will be generated
-css_path = typo3temp/sass/css  
+css_path = typo3temp/sass/css
+# cat=Base; type=options[nested (default)=0,compact=1,compressed=2,expanded=3]; label=Output style
+output_style = 0
 # cat=Base; type=int; label=How many time until generated file are removed from CSS directory (seconds)
 cache_age = 604800 
-  # cat=Base; type=boolean; label=Enable development: File that start with "//dev" will be always parsed
-dev_mode = 0  
+# cat=Base; type=boolean; label=Enable development: File that start with "//dev" will be always parsed
+dev_mode = 0
+# cat=PHPSass; type=boolean; label=Enable custom vendor properties
+enable_custom_vendor_properties = 1
+# cat=sassGem; type=string; label=Path to sass executable
+path_to_sass_gem = /usr/local/bin/sass
+

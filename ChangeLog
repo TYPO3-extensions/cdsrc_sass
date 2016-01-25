@@ -1,3 +1,18 @@
+2016-01-21 Matthias Toscanelli  <m.toscanelli@code-source.ch>
+
+	* Stable 2.0.0
+    * Refactor all code to fit with TYPO3 structure
+    * Change classes namespace to fit with TYPO3 directives
+    * Add CSS files deletion on clear cache
+    * Add new scssphp compiler
+    * Add new compiler with ruby sass gem
+    * Add possibility to chose output style
+
+2016-01-20 Matthias Toscanelli  <m.toscanelli@code-source.ch>
+
+	* Stable 1.2.1
+    * TYPO3 7.6 compatibility fix
+
 2015-09-30 Matthias Toscanelli  <m.toscanelli@code-source.ch>
 
 	* Stable 1.2.0
